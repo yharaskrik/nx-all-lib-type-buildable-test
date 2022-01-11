@@ -1,4 +1,13 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "nest-lib": "packages/nest-lib",
+    "nest-lib2": "packages/nest-lib2",
+    "ng-lib": "packages/ng-lib",
+    "ng-lib2": "packages/ng-lib2",
+    "node-lib": "packages/node-lib",
+    "react-lib": "packages/react-lib",
+    "ts-lib": "packages/ts-lib",
+    "web-lib": "packages/web-lib"
+  }
 }

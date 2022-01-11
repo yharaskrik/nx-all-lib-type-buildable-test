@@ -1,0 +1,34 @@
+{
+  "root": "packages/nest-lib2",
+  "sourceRoot": "packages/nest-lib2/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/nest-lib2",
+        "tsConfig": "packages/nest-lib2/tsconfig.lib.json",
+        "packageJson": "packages/nest-lib2/package.json",
+        "main": "packages/nest-lib2/src/index.ts",
+        "assets": ["packages/nest-lib2/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/nest-lib2/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/nest-lib2"],
+      "options": {
+        "jestConfig": "packages/nest-lib2/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

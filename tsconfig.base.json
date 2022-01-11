@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@all-libs/nest-lib": ["packages/nest-lib/src/index.ts"],
+      "@all-libs/nest-lib2": ["packages/nest-lib2/src/index.ts"],
+      "@all-libs/ng-lib": ["packages/ng-lib/src/index.ts"],
+      "@all-libs/ng-lib2": ["packages/ng-lib2/src/index.ts"],
+      "@all-libs/node-lib": ["packages/node-lib/src/index.ts"],
+      "@all-libs/react-lib": ["packages/react-lib/src/index.ts"],
+      "@all-libs/ts-lib": ["packages/ts-lib/src/index.ts"],
+      "@all-libs/web-lib": ["packages/web-lib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
